@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--        create an xml file that-->
+<!--        has following capabilties-->
+<!--        1.runs the whole class 'priority-->
+<!--        2.runs method bthirdtest in class  BasicAnnotations-->
+<!--        3.runs the whole package class02-->
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/sakirsahin/IdeaProjects/TestNGPull/TestNGBasicsBatch12">
+        <packages>
+            <package name="class02"></package>
+        </packages>
+        <classes>
+            <class name="class01.Priority"></class>
+            <class name="class01.BasicAnnotations">
+                <methods>
+                    <include name="bthirdTest"></include>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>
+
