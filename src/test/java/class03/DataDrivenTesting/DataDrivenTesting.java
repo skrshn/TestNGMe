@@ -1,9 +1,8 @@
-package class03;
+package class03.DataDrivenTesting;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,6 +15,15 @@ public class DataDrivenTesting {
 
     @DataProvider(name = "Credentials")
     public Object[][] data() {
+        Object[][] login = {{"Admin", "abc", "Invalid1 credentials"},
+                {"A", "Hum@nhrm123", "Invalid credentials"},
+                {"Admin", "", "Password cannot be empty"},
+                {"", "Hum@nhrm123", "Username cannot be empty"}
+        };
+        return login;
+    }
+    @DataProvider(name = "Credentials1")
+    public Object[][] data1() {
         Object[][] login = {{"Admin", "abc", "Invalid1 credentials"},
                 {"A", "Hum@nhrm123", "Invalid credentials"},
                 {"Admin", "", "Password cannot be empty"},
