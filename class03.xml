@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="parallelTest" parallel="methods" thread-count="2">
         <classes>
-            <class name="class03.loginTest"/>
+            <class name="class03.LoginTest"/>
         </classes>
     </test>
 </suite>
