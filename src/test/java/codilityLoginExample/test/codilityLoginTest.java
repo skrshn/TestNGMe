@@ -13,15 +13,15 @@ public class codilityLoginTest extends codilityLoginTestBase {
 
     @DataProvider(name = "wrongLoginInformation")
     public static Object[][] wrongLoginInformation() {
-        Object[][] wrongLoginInformation = {{"unknown@codility.com", "password", "You shall not pass! Arr!1"},
-                {"logincodility.com", "password", "Enter a valid email1"},
-                {"", "password", "Email is required1"}};
+        Object[][] wrongLoginInformation = {{"unknown@codility.com", "password", "You shall not pass! Arr!"},
+                {"logincodility.com", "password", "Enter a valid email"},
+                {"", "password", "Email is required"}};
         return wrongLoginInformation;
     }
 
     @DataProvider(name = "validLoginInformation")
     public static Object[][] validLoginInformation() {
-        Object[][] validLoginInformation = {{"login@codility.com", "password", "Welcome to Codility1"}};
+        Object[][] validLoginInformation = {{"login@codility.com", "password", "Welcome to Codility"}};
         return validLoginInformation;
     }
 
