@@ -1,5 +1,7 @@
-package codilityLoginExample;
+package codilityLoginExample.pages;
 
+import codilityLoginExample.utils.codilityBrowserFactory;
+import codilityLoginExample.testBase.codilityLoginTestBase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

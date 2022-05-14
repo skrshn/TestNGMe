@@ -1,5 +1,8 @@
-package codilityLoginExample;
+package codilityLoginExample.test;
 
+import codilityLoginExample.utils.codilityListener;
+import codilityLoginExample.testBase.codilityLoginTestBase;
+import codilityLoginExample.pages.PageLocators;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;

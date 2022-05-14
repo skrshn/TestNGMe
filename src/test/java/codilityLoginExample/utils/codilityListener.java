@@ -1,5 +1,7 @@
-package codilityLoginExample;
+package codilityLoginExample.utils;
 
+import codilityLoginExample.pages.PageLocators;
+import codilityLoginExample.utils.CommonMethods;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.SkipException;

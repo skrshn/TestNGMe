@@ -1,5 +1,7 @@
-package codilityLoginExample;
+package codilityLoginExample.utils;
 
+import codilityLoginExample.pages.PageLocators;
+import codilityLoginExample.testBase.codilityLoginTestBase;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import java.io.File;

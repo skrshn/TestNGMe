@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="codilityLoginExample.codilityListener"/>
+        <listener class-name="codilityLoginExample.utils.codilityListener"/>
     </listeners>
     <test verbose="2" preserve-order="true" name="parallesTestingCodility" parallel="methods" thread-count="3">
         <classes>
-            <class name="codilityLoginExample.codilityLoginTest"/>
+            <class name="codilityLoginExample.test.codilityLoginTest"/>
         </classes>
     </test>
 </suite>
